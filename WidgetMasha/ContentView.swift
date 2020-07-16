@@ -10,6 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!").padding()
+            .onOpenURL { url in
+                print("URL received: \(url)")
+            }
     }
 }
 

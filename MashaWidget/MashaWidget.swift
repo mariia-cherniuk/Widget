@@ -11,27 +11,55 @@ import Intents
 
 struct Entry: TimelineEntry {
     let date: Date
-    let targetDate: Date
 }
 
 struct TimeProvider: TimelineProvider {
 
     func snapshot(with context: Context, completion: @escaping (Entry) -> ()) {
-        let date = Date()
-        let model = Entry(date: Date(), targetDate: Date().addingTimeInterval(6000))
+        let model = Entry(date: Date())
         completion(model)
     }
     
     func timeline(with context: Context, completion: @escaping (Timeline<Entry>) -> ()) {
         var entries = [Entry]()
-        let entryDate = Calendar.current.date(byAdding: .minute, value: 0, to: Date())!
-        let targetDate = Date().addingTimeInterval(3600)
-        let model = Entry(date: entryDate, targetDate: targetDate)
-        
-        entries.append(model)
+        var components = Calendar.current.dateComponents([.era, .year, .month, .day, .hour, .minute, .second], from: Date())
+        components.second = 0
+        let roundedDate = Calendar.current.date(from: components) ?? Date()
+       
+        for minute in 0..<60 {
+            let entryDate = Calendar.current.date(byAdding: .minute, value: minute, to: roundedDate) ?? Date()
+            let model = Entry(date: entryDate)
+            entries.append(model)
+        }
         
         let timeline = Timeline(entries: entries, policy: .atEnd)
         completion(timeline)
+    }
+}
+
+struct TimeZoneView: View {
+    
+    let sourceDate: Date
+    let timeZone: String
+    
+    var body: some View {
+        Link(destination: URL(string: timeZone)!) {
+            VStack {
+                Text(timeZone)
+                    .font(.caption)
+                
+                Text(dateString(for: timeZone))
+                    .font(.caption)
+            }
+        }
+    }
+    
+    func dateString(for timeZone: String) -> String {
+        let form = DateFormatter()
+        form.timeStyle = .short
+        form.timeZone = TimeZone(abbreviation: timeZone)
+        
+        return form.string(from: sourceDate)
     }
 }
 
@@ -40,33 +68,32 @@ struct WidgetView: View {
     
     let data: Entry
     
-    var font: Font {
-        if family == .systemSmall {
-            return .title
-        } else {
-            return .largeTitle
-        }
-    }
-    
     var body: some View {
-        ZStack {
-            ContainerRelativeShape()
-                .inset(by: 5)
-                .fill(family == .systemSmall ? Color.red : Color.pink)
-            
-            Text(data.targetDate, style: .timer)
-                .multilineTextAlignment(.center)
-                .font(font)
-                .padding()
+        if family == .systemSmall {
+            TimeZoneView(sourceDate: data.date, timeZone: "PST")
+        } else if family == .systemMedium {
+            HStack(spacing: 20) {
+                TimeZoneView(sourceDate: data.date, timeZone: "PST")
+                TimeZoneView(sourceDate: data.date, timeZone: "EST")
+            }
+        } else if family == .systemLarge {
+            VStack(spacing: 40) {
+                HStack(spacing: 20) {
+                    TimeZoneView(sourceDate: data.date, timeZone: "PST")
+                    TimeZoneView(sourceDate: data.date, timeZone: "EST")
+                }
+                HStack(spacing: 20) {
+                    TimeZoneView(sourceDate: data.date, timeZone: "GMT")
+                    TimeZoneView(sourceDate: data.date, timeZone: "JST")
+                }
+            }
         }
-        .background(Color(white: 0.1))
-        .foregroundColor(.white)
     }
 }
 
 struct PlaceholderView: View {
     
-    let entry = Entry(date: Date(), targetDate: Date().addingTimeInterval(3600))
+    let entry = Entry(date: Date())
     
     var body: some View {
         WidgetView(data: entry)
