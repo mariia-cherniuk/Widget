@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7440E73424C08432002B1C9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E73324C08432002B1C9A /* AppDelegate.swift */; };
+		7440E73624C08432002B1C9A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E73524C08432002B1C9A /* SceneDelegate.swift */; };
+		7440E73824C08432002B1C9A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E73724C08432002B1C9A /* ContentView.swift */; };
+		7440E73A24C08436002B1C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7440E73924C08436002B1C9A /* Assets.xcassets */; };
+		7440E73D24C08436002B1C9A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7440E73C24C08436002B1C9A /* Preview Assets.xcassets */; };
+		7440E74024C08436002B1C9A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7440E73E24C08436002B1C9A /* LaunchScreen.storyboard */; };
+		7440E74B24C08436002B1C9A /* WidgetMashaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E74A24C08436002B1C9A /* WidgetMashaTests.swift */; };
+		7440E75624C08436002B1C9A /* WidgetMashaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E75524C08436002B1C9A /* WidgetMashaUITests.swift */; };
+		7440E76A24C08458002B1C9A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7440E76924C08458002B1C9A /* WidgetKit.framework */; };
+		7440E76C24C08458002B1C9A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7440E76B24C08458002B1C9A /* SwiftUI.framework */; };
+		7440E76F24C08458002B1C9A /* MashaWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7440E76E24C08458002B1C9A /* MashaWidget.swift */; };
+		7440E77224C08459002B1C9A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7440E77124C08459002B1C9A /* Assets.xcassets */; };
+		7440E77424C08459002B1C9A /* MashaWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7440E77024C08458002B1C9A /* MashaWidget.intentdefinition */; };
+		7440E77524C08459002B1C9A /* MashaWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = 7440E77024C08458002B1C9A /* MashaWidget.intentdefinition */; };
+		7440E77824C08459002B1C9A /* MashaWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7440E76724C08458002B1C9A /* MashaWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7440E74724C08436002B1C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7440E72824C08432002B1C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7440E72F24C08432002B1C9A;
+			remoteInfo = WidgetMasha;
+		};
+		7440E75224C08436002B1C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7440E72824C08432002B1C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7440E72F24C08432002B1C9A;
+			remoteInfo = WidgetMasha;
+		};
+		7440E77624C08459002B1C9A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7440E72824C08432002B1C9A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7440E76624C08458002B1C9A;
+			remoteInfo = MashaWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7440E77C24C08459002B1C9A /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7440E77824C08459002B1C9A /* MashaWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7440E73024C08432002B1C9A /* WidgetMasha.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WidgetMasha.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440E73324C08432002B1C9A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7440E73524C08432002B1C9A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7440E73724C08432002B1C9A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7440E73924C08436002B1C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7440E73C24C08436002B1C9A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7440E73F24C08436002B1C9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7440E74124C08436002B1C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7440E74624C08436002B1C9A /* WidgetMashaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetMashaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440E74A24C08436002B1C9A /* WidgetMashaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetMashaTests.swift; sourceTree = "<group>"; };
+		7440E74C24C08436002B1C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7440E75124C08436002B1C9A /* WidgetMashaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WidgetMashaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440E75524C08436002B1C9A /* WidgetMashaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetMashaUITests.swift; sourceTree = "<group>"; };
+		7440E75724C08436002B1C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7440E76724C08458002B1C9A /* MashaWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MashaWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7440E76924C08458002B1C9A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		7440E76B24C08458002B1C9A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		7440E76E24C08458002B1C9A /* MashaWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MashaWidget.swift; sourceTree = "<group>"; };
+		7440E77024C08458002B1C9A /* MashaWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = MashaWidget.intentdefinition; sourceTree = "<group>"; };
+		7440E77124C08459002B1C9A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7440E77324C08459002B1C9A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7440E72D24C08432002B1C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74324C08436002B1C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74E24C08436002B1C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E76424C08458002B1C9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E76C24C08458002B1C9A /* SwiftUI.framework in Frameworks */,
+				7440E76A24C08458002B1C9A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7440E72724C08432002B1C9A = {
+			isa = PBXGroup;
+			children = (
+				7440E73224C08432002B1C9A /* WidgetMasha */,
+				7440E74924C08436002B1C9A /* WidgetMashaTests */,
+				7440E75424C08436002B1C9A /* WidgetMashaUITests */,
+				7440E76D24C08458002B1C9A /* MashaWidget */,
+				7440E76824C08458002B1C9A /* Frameworks */,
+				7440E73124C08432002B1C9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7440E73124C08432002B1C9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7440E73024C08432002B1C9A /* WidgetMasha.app */,
+				7440E74624C08436002B1C9A /* WidgetMashaTests.xctest */,
+				7440E75124C08436002B1C9A /* WidgetMashaUITests.xctest */,
+				7440E76724C08458002B1C9A /* MashaWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7440E73224C08432002B1C9A /* WidgetMasha */ = {
+			isa = PBXGroup;
+			children = (
+				7440E73324C08432002B1C9A /* AppDelegate.swift */,
+				7440E73524C08432002B1C9A /* SceneDelegate.swift */,
+				7440E73724C08432002B1C9A /* ContentView.swift */,
+				7440E73924C08436002B1C9A /* Assets.xcassets */,
+				7440E73E24C08436002B1C9A /* LaunchScreen.storyboard */,
+				7440E74124C08436002B1C9A /* Info.plist */,
+				7440E73B24C08436002B1C9A /* Preview Content */,
+			);
+			path = WidgetMasha;
+			sourceTree = "<group>";
+		};
+		7440E73B24C08436002B1C9A /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7440E73C24C08436002B1C9A /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7440E74924C08436002B1C9A /* WidgetMashaTests */ = {
+			isa = PBXGroup;
+			children = (
+				7440E74A24C08436002B1C9A /* WidgetMashaTests.swift */,
+				7440E74C24C08436002B1C9A /* Info.plist */,
+			);
+			path = WidgetMashaTests;
+			sourceTree = "<group>";
+		};
+		7440E75424C08436002B1C9A /* WidgetMashaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7440E75524C08436002B1C9A /* WidgetMashaUITests.swift */,
+				7440E75724C08436002B1C9A /* Info.plist */,
+			);
+			path = WidgetMashaUITests;
+			sourceTree = "<group>";
+		};
+		7440E76824C08458002B1C9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7440E76924C08458002B1C9A /* WidgetKit.framework */,
+				7440E76B24C08458002B1C9A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7440E76D24C08458002B1C9A /* MashaWidget */ = {
+			isa = PBXGroup;
+			children = (
+				7440E76E24C08458002B1C9A /* MashaWidget.swift */,
+				7440E77024C08458002B1C9A /* MashaWidget.intentdefinition */,
+				7440E77124C08459002B1C9A /* Assets.xcassets */,
+				7440E77324C08459002B1C9A /* Info.plist */,
+			);
+			path = MashaWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7440E72F24C08432002B1C9A /* WidgetMasha */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7440E75A24C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMasha" */;
+			buildPhases = (
+				7440E72C24C08432002B1C9A /* Sources */,
+				7440E72D24C08432002B1C9A /* Frameworks */,
+				7440E72E24C08432002B1C9A /* Resources */,
+				7440E77C24C08459002B1C9A /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7440E77724C08459002B1C9A /* PBXTargetDependency */,
+			);
+			name = WidgetMasha;
+			productName = WidgetMasha;
+			productReference = 7440E73024C08432002B1C9A /* WidgetMasha.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7440E74524C08436002B1C9A /* WidgetMashaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7440E75D24C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMashaTests" */;
+			buildPhases = (
+				7440E74224C08436002B1C9A /* Sources */,
+				7440E74324C08436002B1C9A /* Frameworks */,
+				7440E74424C08436002B1C9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7440E74824C08436002B1C9A /* PBXTargetDependency */,
+			);
+			name = WidgetMashaTests;
+			productName = WidgetMashaTests;
+			productReference = 7440E74624C08436002B1C9A /* WidgetMashaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7440E75024C08436002B1C9A /* WidgetMashaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7440E76024C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMashaUITests" */;
+			buildPhases = (
+				7440E74D24C08436002B1C9A /* Sources */,
+				7440E74E24C08436002B1C9A /* Frameworks */,
+				7440E74F24C08436002B1C9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7440E75324C08436002B1C9A /* PBXTargetDependency */,
+			);
+			name = WidgetMashaUITests;
+			productName = WidgetMashaUITests;
+			productReference = 7440E75124C08436002B1C9A /* WidgetMashaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		7440E76624C08458002B1C9A /* MashaWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7440E77924C08459002B1C9A /* Build configuration list for PBXNativeTarget "MashaWidgetExtension" */;
+			buildPhases = (
+				7440E76324C08458002B1C9A /* Sources */,
+				7440E76424C08458002B1C9A /* Frameworks */,
+				7440E76524C08458002B1C9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MashaWidgetExtension;
+			productName = MashaWidgetExtension;
+			productReference = 7440E76724C08458002B1C9A /* MashaWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7440E72824C08432002B1C9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				TargetAttributes = {
+					7440E72F24C08432002B1C9A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					7440E74524C08436002B1C9A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7440E72F24C08432002B1C9A;
+					};
+					7440E75024C08436002B1C9A = {
+						CreatedOnToolsVersion = 12.0;
+						TestTargetID = 7440E72F24C08432002B1C9A;
+					};
+					7440E76624C08458002B1C9A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = 7440E72B24C08432002B1C9A /* Build configuration list for PBXProject "WidgetMasha" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7440E72724C08432002B1C9A;
+			productRefGroup = 7440E73124C08432002B1C9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7440E72F24C08432002B1C9A /* WidgetMasha */,
+				7440E74524C08436002B1C9A /* WidgetMashaTests */,
+				7440E75024C08436002B1C9A /* WidgetMashaUITests */,
+				7440E76624C08458002B1C9A /* MashaWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7440E72E24C08432002B1C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E74024C08436002B1C9A /* LaunchScreen.storyboard in Resources */,
+				7440E73D24C08436002B1C9A /* Preview Assets.xcassets in Resources */,
+				7440E73A24C08436002B1C9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74424C08436002B1C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74F24C08436002B1C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E76524C08458002B1C9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E77224C08459002B1C9A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7440E72C24C08432002B1C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E73424C08432002B1C9A /* AppDelegate.swift in Sources */,
+				7440E73624C08432002B1C9A /* SceneDelegate.swift in Sources */,
+				7440E73824C08432002B1C9A /* ContentView.swift in Sources */,
+				7440E77524C08459002B1C9A /* MashaWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74224C08436002B1C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E74B24C08436002B1C9A /* WidgetMashaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E74D24C08436002B1C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E75624C08436002B1C9A /* WidgetMashaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7440E76324C08458002B1C9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7440E76F24C08458002B1C9A /* MashaWidget.swift in Sources */,
+				7440E77424C08459002B1C9A /* MashaWidget.intentdefinition in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7440E74824C08436002B1C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7440E72F24C08432002B1C9A /* WidgetMasha */;
+			targetProxy = 7440E74724C08436002B1C9A /* PBXContainerItemProxy */;
+		};
+		7440E75324C08436002B1C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7440E72F24C08432002B1C9A /* WidgetMasha */;
+			targetProxy = 7440E75224C08436002B1C9A /* PBXContainerItemProxy */;
+		};
+		7440E77724C08459002B1C9A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7440E76624C08458002B1C9A /* MashaWidgetExtension */;
+			targetProxy = 7440E77624C08459002B1C9A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7440E73E24C08436002B1C9A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7440E73F24C08436002B1C9A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7440E75824C08436002B1C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7440E75924C08436002B1C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7440E75B24C08436002B1C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WidgetMasha/Preview Content\"";
+				DEVELOPMENT_TEAM = S3M44GGB4N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WidgetMasha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMasha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7440E75C24C08436002B1C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WidgetMasha/Preview Content\"";
+				DEVELOPMENT_TEAM = S3M44GGB4N;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = WidgetMasha/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMasha";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7440E75E24C08436002B1C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WidgetMashaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMashaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WidgetMasha.app/WidgetMasha";
+			};
+			name = Debug;
+		};
+		7440E75F24C08436002B1C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WidgetMashaTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMashaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WidgetMasha.app/WidgetMasha";
+			};
+			name = Release;
+		};
+		7440E76124C08436002B1C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WidgetMashaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMashaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WidgetMasha;
+			};
+			name = Debug;
+		};
+		7440E76224C08436002B1C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = WidgetMashaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMashaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WidgetMasha;
+			};
+			name = Release;
+		};
+		7440E77A24C08459002B1C9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MashaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMasha.MashaWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7440E77B24C08459002B1C9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MashaWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Mariia-Cherniuk.WidgetMasha.MashaWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7440E72B24C08432002B1C9A /* Build configuration list for PBXProject "WidgetMasha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7440E75824C08436002B1C9A /* Debug */,
+				7440E75924C08436002B1C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7440E75A24C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMasha" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7440E75B24C08436002B1C9A /* Debug */,
+				7440E75C24C08436002B1C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7440E75D24C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMashaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7440E75E24C08436002B1C9A /* Debug */,
+				7440E75F24C08436002B1C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7440E76024C08436002B1C9A /* Build configuration list for PBXNativeTarget "WidgetMashaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7440E76124C08436002B1C9A /* Debug */,
+				7440E76224C08436002B1C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7440E77924C08459002B1C9A /* Build configuration list for PBXNativeTarget "MashaWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7440E77A24C08459002B1C9A /* Debug */,
+				7440E77B24C08459002B1C9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7440E72824C08432002B1C9A /* Project object */;
+}
